@@ -1,0 +1,44 @@
+{
+	// Place your games_plat workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	"TP_REDUCER_COMPONENT": {
+		"scope": "typescriptreact",
+		"prefix": "TP_REDUCER_COMPONENT",
+		"body": [
+			"import React, { useState, useEffect, Component } from 'react';",
+			"import { connect } from 'react-redux';",
+			"import { Dispatch } from 'redux';",
+			"import { BrowserRouter as Router, Route, Switch, Redirect, NavLink } from 'react-router-dom'",
+			"interface iPorps {",
+  		"	$1",
+			"}",
+			"interface iState { ",
+			"	$2",
+			"}",
+			"class $0 extends Component<iPorps, iState> {",
+  		"	constructor(props: iPorps) { ",
+			"		super(props); ",
+			" 	this.state = {",
+			"			$2",
+			"		}",
+			"	}",
+			"	render() {",
+			"		return (<div>$4</div>)",
+			"	}",
+			"}",
+			"const mapStateToProps = (state: any) => {",
+  		"	return {",
+  		"	}",
+			"}",
+			"const mapDispatchToProps = (dispatch: Dispatch) => {",
+			"}",
+			"export default connect(mapStateToProps, mapDispatchToProps)($0)"
+		],
+		"description": "Create React Class Component"
+	}
+}
