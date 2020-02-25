@@ -26,15 +26,12 @@ const webpack_dev = merge(build_dev_conf, {
       disableDotRule: true,
     },
 
-
     // public:'./public',
     // colors: true, //终端中输出结果为彩色
     // historyApiFallback: true, //不跳转
     // inline: true, //实时刷新
     hot: true,  // 使用热加载插件 HotModuleReplacementPlugin
-
     // before(app, server) {
-
     //   if (fs.existsSync(paths.proxySetup)) {
     //     // This registers user provided middleware for proxy reasons
     //     require(paths.proxySetup)(app);
@@ -53,7 +50,6 @@ const webpack_dev = merge(build_dev_conf, {
     //   app.use(noopServiceWorkerMiddleware());
 
     //   app.use('/api', apiRouters);
-
     // },
   },
 
@@ -73,6 +69,7 @@ const webpack_dev = merge(build_dev_conf, {
         messages: ['You application is running here http://localhost:8080'],
         notes: ['Some additionnal notes to be displayed unpon successful compilation']
       },
+
       onErrors: function (severity, errors) {
         // You can listen to errors transformed and prioritized by the plugin
         // severity can be 'error' or 'warning'
@@ -80,7 +77,6 @@ const webpack_dev = merge(build_dev_conf, {
       // should the console be cleared between each compilation?
       // default is true
       clearConsole: true,
-
       // add formatters and transformers (see below)
       // additionalFormatters: [],
       // additionalTransformers: []

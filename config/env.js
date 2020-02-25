@@ -34,7 +34,7 @@ module.exports = function () {
         return env;
       },
       {
-        NODE_ENV: argv.mode || 'production', // webpack在production模式下会自动启用一些配置
+        NODE_ENV: argv.mode || 'production', //webpack在production模式下会自动启用一些配置
         APP_ENV: env,
       }
     );

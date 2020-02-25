@@ -120,7 +120,9 @@ module.exports = {
       suppressSuccess: true
     }),
 
-    require('autoprefixer'), //调用autoprefixer插件，例如 display: flex
+    //调用autoprefixer插件，例如 display: flex
+    require('autoprefixer'), 
+    
     // app 模块
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, '../template/index.html'),
